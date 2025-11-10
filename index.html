@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Визитка - Главная</title>
+    <link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
-    <h1>Тут будет нормальный сайт</h1>
-    <p>Самостоятельно создать структуру сайта: каталоги pages, img ,style</p>
-    <p>Создать 3-4 веб страницы с использованием стилей css</p>
-    <p>Добавить эффекты или формы JS</p>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="pages/about.html">Обо мне</a></li>
+                <li><a href="pages/portfolio.html">Портфолио</a></li>
+                <li><a href="pages/contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <img src="img/profile.jpg" alt="Фото профиля" class="profile-pic" />
+        <h1>Иван Иванов</h1>
+        <p>Веб-разработчик | Фронтенд специалист | Люблю создавать красивые сайты</p>
+        <button id="contactBtn">Связаться со мной</button>
+    </section>
+
+    <footer>
+        <p>© 2024 Иван Иванов. Все права защищены.</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('contactBtn');
+        btn.addEventListener('click', () => {
+            alert('Спасибо за интерес! Мой email: ivan@example.com');
+        });
+    </script>
 </body>
-</html>
